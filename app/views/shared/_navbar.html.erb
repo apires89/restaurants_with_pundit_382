@@ -12,7 +12,7 @@
     <ul class="navbar-nav mr-auto">
       <% if user_signed_in? %>
         <li class="nav-item active">
-          <%= link_to "Home", "#", class: "nav-link" %>
+          <p class="nav-link"><%= current_user.email %> Status:<%= current_user.status %></p>
         </li>
         <li class="nav-item">
           <%= link_to "Messages", "#", class: "nav-link" %>
